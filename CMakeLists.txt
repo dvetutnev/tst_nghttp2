@@ -15,10 +15,9 @@ option(WITH_NEVERBLEED "Use neverbleed" OFF)
 
 add_subdirectory(vendor/nghttp2)
 
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} nghttp2_asio)
-find_package(Boost)
-target_include_directories(${PROJECT_NAME} PRIVATE ${Boost_INCLUDE_DIRS})
 
 file(
     GLOB_RECURSE PROJECT_FILES FOLLOW_SYMLINKS
