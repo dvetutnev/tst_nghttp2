@@ -1,6 +1,5 @@
 #include <iostream>
 
-#include <vendor/nghttp2/config.h>
 #include <nghttp2/asio_http2_server.h>
 
 using namespace nghttp2::asio_http2;
