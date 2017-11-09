@@ -29,3 +29,6 @@
 *.app
 CMakeLists.txt.user*
 .idea/
+.vs/
+CMakeSettings.json
+
